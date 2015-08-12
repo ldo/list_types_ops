@@ -4,11 +4,10 @@
 #     blender -b -P list_types_ops.py
 #
 # to get a list of all the undocumented UI object classes which can
-# be used for customizing the Blender user interface. A (slightly out-of-date)
-# list of these can be found at
-# <http://en.wikibooks.org/wiki/Blender_3D:_Noob_to_Pro/Advanced_Tutorials/Python_Scripting/Object,_Action,_Settings_New>.
+# be used for customizing the Blender user interface.
 #
-# Written 2011 December 20 by Lawrence D'Oliveiro <ldo@geek-central.gen.nz>.
+# Copyright 2011 by Lawrence D'Oliveiro <ldo@geek-central.gen.nz>.
+# Licensed under CC-BY <http://creativecommons.org/licenses/by/4.0/>.
 #-
 
 import sys
