@@ -18,7 +18,7 @@ name_groups = {}
 
 for name in dir(bpy.types) :
     name_parts = re.search(r"^([A-Z0-9]+_[A-Z]T)_(\w+)$", name)
-    if name_parts  != None :
+    if name_parts != None :
         # sys.stdout.write(name + "\n")
         prefix, rest = name_parts.groups()
         if prefix not in name_groups :
