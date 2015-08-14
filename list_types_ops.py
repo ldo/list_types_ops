@@ -88,7 +88,26 @@
 #     OT -- operator
 #     PT -- panel
 #
-# Copyright 2011 by Lawrence D'Oliveiro <ldo@geek-central.gen.nz>.
+# What are they for? The xx_OT_xx objects are operators that perform
+# the built-in Blender functions. The others are UI elements that
+# provide the following important class methods:
+#
+#     cls.append(layoutfunc)
+#     cls.prepend(layoutfunc)
+#     cls.remove(layoutfunc)
+#
+# where layoutfunc is a function declared as
+#
+#     def layoutfunc(self, context) :
+#        ...
+#
+# whose purpose is to add new entries to an instance of the specified
+# UI element when it is called. The “append” method puts the new
+# entry/entries created by the layoutfunc at the end of the element;
+# the “prepend” method puts them at the start, and the “remove” method
+# removes the layoutfunc, so those entries will no longer be added.
+#
+# Copyright 2011, 2015 by Lawrence D'Oliveiro <ldo@geek-central.gen.nz>.
 # Licensed under CC-BY <http://creativecommons.org/licenses/by/4.0/>.
 #-
 
