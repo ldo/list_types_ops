@@ -8,18 +8,23 @@
 # of the form category_class_name where “category” is an uppercase
 # category of Blender functionality, “class” is a two-uppercase-letter
 # code indicating the class of UI object, and “name” is the lowercase
-# identifying name. The following values for “category” have been observed:
+# identifying name. As of Blender 3.0, the following values for “category”
+# have been observed:
 #
 #     ACTION
 #     ANIM
 #     ARMATURE
+#     ASSET
+#     ASSETBROWSER
 #     BOID
 #     BONE
 #     BRUSH
 #     BUTTONS
+#     BVH
 #     CAMERA
 #     CLIP
 #     CLOTH
+#     COLLECTION
 #     CONSOLE
 #     CONSTRAINT
 #     CURVE
@@ -28,13 +33,16 @@
 #     DOPESHEET
 #     DPAINT
 #     ED
+#     FBX
 #     FILEBROWSER
 #     FILE
 #     FLUID
 #     FONT
+#     GLTF
 #     GPENCIL
 #     GRAPH
-#     GROUP
+#     (GROUP obsoleted by COLLECTION as of 2.8?)
+#     HAIR
 #     IMAGE
 #     INFO
 #     LAMP
@@ -54,11 +62,14 @@
 #     PALETTE
 #     PARTICLE
 #     PHYSICS
+#     PLY
+#     POINTCLOUD
 #     POSELIB
 #     POSE
+#     PREFERENCES
 #     PROPERTIES
 #     PTCACHE
-#     RENDERLAYER
+#     (RENDERLAYER obsoleted by VIEWLAYER as of 2.8?)
 #     RENDER
 #     RIGIDBODY
 #     SCENE
@@ -68,18 +79,25 @@
 #     SEQUENCER
 #     SKETCH
 #     SOUND
+#     SPREADSHEET
+#     STATUSBAR
+#     STL
 #     SURFACE
 #     TEXTURE
 #     TEXT
 #     TIME
+#     TOPBAR
 #     TRANSFORM
 #     UI
 #     USERPREF
 #     UV
 #     VIEW2D
 #     VIEW3D
+#     VIEWLAYER
 #     WM
+#     WORKSPACE
 #     WORLD
+#     X3D
 #
 # while the following values for “class” have been observed:
 #
